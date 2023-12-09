@@ -1,0 +1,171 @@
+ /* Navbar */
+ .navbar {
+   background-color: #441768;
+   font-family: 'Inter', sans-serif;
+   padding-top: 40px;
+   /* Adjust the value as needed */
+   position: fixed;
+ }
+
+ .navbar-brand-container {
+   position: absolute;
+ }
+
+ .navbar-brand img {
+   width: 60px;
+   height: 60px;
+ }
+
+ .navbar-brand b {
+   margin-top: -25%;
+   margin-left: 29%;
+   display: block;
+   color: #000000;
+ }
+
+ .navbar-brand p {
+   margin-top: -3%;
+   margin-left: 30%;
+   display: block;
+   color: #000;
+   font-size: 60%;
+ }
+
+ .navbar-brand b {
+   margin-top: -25%;
+   margin-left: 25%;
+   display: block;
+   color: #000;
+ }
+
+ .navbar-brand,
+ .nav-link {
+   color: white !important;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+ }
+
+ .nav-link:hover::after {
+   content: '';
+   display: block;
+   border-bottom: 3px solid #f3f4f5;
+   width: -50%;
+   margin: auto;
+   padding-bottom: 4px;
+   margin-bottom: -8px;
+ }
+
+ .dropdown-menu {
+   background-color: #0079C2;
+ }
+
+ .dropdown-item {
+   color: white;
+ }
+
+ /* Akhir Navbar */
+
+ .logo-container {
+   display: flex;
+   align-items: center;
+ }
+
+ .logo {
+   height: 60px;
+   /* Sesuaikan tinggi logo */
+   margin-right: 15px;
+ }
+
+ .navbar {
+   background-color: #048ABF;
+   /* Warna latar belakang menggunakan kode warna #048ABF */
+ }
+
+ /* Menetapkan lebar maksimum untuk gambar */
+ .img-fluid {
+   max-width: 100%;
+   height: auto;
+ }
+
+ /* Menetapkan tinggi maksimum untuk gambar */
+ .img-fluid.rounded {
+   max-height: 500px;
+   /* Sesuaikan tinggi sesuai kebutuhan Anda */
+ }
+
+
+ /* Add your custom styles here */
+
+ /* Example style for the hero section */
+ .hero {
+   background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+   color: #fff;
+   padding: 100px 0;
+ }
+
+ /*footer*/
+
+ footer {
+   background-image: url(gambar/BCC.png);
+   text-align: left;
+   font: bold 16px sans-serif;
+   padding: 20px 50px;
+ }
+
+ .footer-left,
+ .footer-center,
+ .footer-right {
+   display: inline-block;
+   vertical-align: top;
+ }
+
+ .footer-left {
+   width: 30%;
+ }
+
+ .footer-left h3 {
+   color: #f5f5f5;
+   margin: 0;
+   padding-top: 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+
+ .footer-center {
+   color: #ffffff;
+   font-size: 18px;
+   margin: 10px 15px;
+ }
+
+ .footer-center i {
+   font-size: 30px;
+   margin-right: 10px;
+ }
+
+ .footer-center p {
+   display: inline-block;
+ }
+
+ .footer-right {
+   margin: 10px 15px;
+ }
+
+ .footer-right p {
+   color: #f5f5f5;
+   margin: 0;
+   margin: 10px 15px;
+ }
+
+ .social-icons a {
+   color: #fff;
+   margin-right: 10px;
+   font-size: 20px;
+   text-decoration: none;
+ }
+
+ .social-icons a:hover {
+   color: #e44d26;
+ }
+
+ .body {
+   padding-top: 90px;
+ }

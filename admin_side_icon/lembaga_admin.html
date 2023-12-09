@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lembaga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dasbor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="body-pd">
+  <header class="header" id="header">
+    <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>
+      Lembaga
+
+    </div>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div><a href="#" class="nav_logo" style="text-decoration: none;">
+        <img src="gambar/logo del.png" alt="Logo" style="width: 35px;">
+            <span class="nav_logo-name">It Del</span> </a>
+        <div class="nav_list">
+          <a href="pengumuman_admin.html" class="nav_link"><i class="fa-solid fa-table-columns"></i> <span
+              class="nav_name">Dashboard</span> </a>
+          <a href="pengumuman_admin.html" class="nav_link "> <i class="fa-solid fa-newspaper"></i><span
+              class="nav_name">Pengunguman</span> </a>
+          <a href="program_pendidikan_admin.html" class="nav_link"> <i class="fa-solid fa-book"></i>Program Pendidikan</span>
+          </a>
+          <a href="fasilitas_admin.html" class="nav_link "> <i class="fa-solid fa-school"></i> <span
+              class="nav_name">Fasilitas</span> </a>
+          <a href="lembaga_admin.html" class="nav_link active"><i class="fa-solid fa-building-columns"></i> <span
+              class="nav_name"><b>Lembaga</b></span> </a>
+        </div>
+      </div> <a href="#" class="nav_link"> <i class="fa-solid fa-right-from-bracket mirror"></i> <span
+          class="nav_name">keluar</span> </a>
+    </nav>
+  </div>
+  <!--Container Main start-->
+  <div class="height-100 bg-light konten" style="margin-left: -1.5rem;">
+
+    <section style="display: flex;">
+      <div class="input-group mb-3" style="width: 50%;">
+        <input type="text" class="form-control" placeholder="Cari berdasarkan nama lembaga. . . "
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary bg-primary" type="button" id="button-addon2"
+          style="color: white;">Cari&nbsp;<i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div style="display: flex;width: 50%; height: 2.5rem; justify-content: right;">
+        <button type="button" class="btn"
+          style="background-color:  #02B534; display: flex; align-items: center; border-radius: 1rem;">
+          <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i> &nbsp;
+          <div style="color: white;">Menambah Baru</div>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Lembaga</th>
+            <th scope="col">Tanggal</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>LPPM It Del</td>
+            <td>11 Agustus 2015</td>
+            <td>
+              <button class="btn lihatBtn"><i class="fa-regular fa-eye"></i>&nbsp;tampilkan</button>
+              <button class="btn editBtn"><i class="fa-regular fa-trash-can"></i>&nbsp;edit</button>
+              <button class="btn hapusBtn"><i class="fa-solid fa-trash-can"></i>&nbsp;hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>UPT-PP</td>
+            <td>20 Maret 2020</td>
+            <td>
+              <button class="btn lihatBtn"><i class="fa-regular fa-eye"></i>&nbsp;tampilkan</button>
+              <button class="btn editBtn"><i class="fa-regular fa-trash-can"></i>&nbsp;edit</button>
+              <button class="btn hapusBtn"><i class="fa-solid fa-trash-can"></i>&nbsp;hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>SPM</td>
+            <td>7 Desember 2021</td>
+            <td>
+              <button class="btn lihatBtn"><i class="fa-regular fa-eye"></i>&nbsp;tampilkan</button>
+              <button class="btn editBtn"><i class="fa-regular fa-trash-can"></i>&nbsp;edit</button>
+              <button class="btn hapusBtn"><i class="fa-solid fa-trash-can"></i>&nbsp;hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Koperasi</td>
+            <td>12 Mei 2022</td>
+            <td>
+              <button class="btn lihatBtn"><i class="fa-regular fa-eye"></i>&nbsp;tampilkan</button>
+              <button class="btn editBtn"><i class="fa-regular fa-trash-can"></i>&nbsp;edit</button>
+              <button class="btn hapusBtn"><i class="fa-solid fa-trash-can"></i>&nbsp;hapus</button>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">sebelumnya</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">selanjutnya</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!--Container Main end-->
+
+</html>
+
+<style>
+  .lihatBtn {
+    background-color: #0281F1;
+    color: white;
+  }
+
+  .editBtn {
+    background-color: #E0A800;
+    color: white;
+  }
+
+  .hapusBtn {
+    background-color: #C82340;
+    color: white;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+
+    const showNavbar = (toggleId, navId, bodyId, headerId) => {
+      const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId),
+        bodypd = document.getElementById(bodyId),
+        headerpd = document.getElementById(headerId)
+
+      // Validate that all variables exist
+      if (toggle && nav && bodypd && headerpd) {
+        toggle.addEventListener('click', () => {
+          // show navbar
+          nav.classList.toggle('show')
+          // change icon
+          toggle.classList.toggle('bx-x')
+          // add padding to body
+          bodypd.classList.toggle('body-pd')
+          // add padding to header
+          headerpd.classList.toggle('body-pd')
+        })
+      }
+    }
+
+    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+    /*===== LINK ACTIVE =====*/
+    const linkColor = document.querySelectorAll('.nav_link')
+
+    function colorLink() {
+      if (linkColor) {
+        linkColor.forEach(l => l.classList.remove('active'))
+        this.classList.add('active')
+      }
+    }
+    linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+    // Your code to run since DOM is loaded and ready
+  });
+</script>

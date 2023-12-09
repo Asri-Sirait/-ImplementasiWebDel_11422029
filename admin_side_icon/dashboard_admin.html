@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor</title>
+    <link rel="stylesheet" href="dasbor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>
+            Dashboard
+        </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div><a href="#" class="nav_logo" style="text-decoration: none;">
+                    <img src="gambar/logo del.png" alt="Logo" style="width: 35px;">
+                    <span class="nav_logo-name">It Del</span> </a>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active"><i class="fa-solid fa-table-columns"></i> <span
+                            class="nav_name"><b>Dashboard</b></span> </a>
+                    <a href="pengumuman_admin.html" class="nav_link"> <i class="fa-solid fa-newspaper"></i><span
+                            class="nav_name">Pengunguman</span> </a>
+                    <a href="program_pendidikan_admin.html" class="nav_link"> <i class="fa-solid fa-book"></i>Program
+                        Pendidikan</span> </a>
+                    <a href="fasilitas_admin.html" class="nav_link"> <i class="fa-solid fa-school"></i> <span
+                            class="nav_name">Fasilitas</span> </a>
+                    <a href="lembaga_admin.html" class="nav_link"><i class="fa-solid fa-building-columns"></i> <span
+                            class="nav_name">Lembaga</span> </a>
+                </div>
+            </div> <a href="#" class="nav_link"> <i class="fa-solid fa-right-from-bracket mirror"></i> <span
+                    class="nav_name">keluar</span> </a>
+        </nav>
+    </div>
+    <div class="height-100 bg-light konten" style="margin-left: -1.5rem;">
+        <div class="kotakSapa">
+            <div class="headSapa">
+                Dashboard
+            </div>
+            <div class="bodySapa">
+                Halo <b>Admin IT Del !!</b>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <i class="fas fa-bullhorn fa-3x"></i>
+                <h2>Pengumuman</h2>
+                <p>50</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-graduation-cap fa-3x"></i>
+                <h2>Pendidikan</h2>
+                <p>10</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-building fa-3x"></i>
+                <h2>Fasilitas</h2>
+                <p>1000</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-university fa-3x"></i>
+                <h2>Lembaga</h2>
+                <p>100</p>
+            </div>
+            <!-- end-->
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+            const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId),
+                bodypd = document.getElementById(bodyId),
+                headerpd = document.getElementById(headerId)
+
+
+            if (toggle && nav && bodypd && headerpd) {
+                toggle.addEventListener('click', () => {
+                    //navbar
+                    nav.classList.toggle('show')
+                    //icon
+                    toggle.classList.toggle('bx-x')
+                    bodypd.classList.toggle('body-pd')
+                    headerpd.classList.toggle('body-pd')
+                })
+            }
+        }
+
+        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+        const linkColor = document.querySelectorAll('.nav_link')
+
+        function colorLink() {
+            if (linkColor) {
+                linkColor.forEach(l => l.classList.remove('active'))
+                this.classList.add('active')
+            }
+        }
+        linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+    });
+</script>
